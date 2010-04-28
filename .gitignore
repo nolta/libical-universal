@@ -1,0 +1,17 @@
+build
+Icon?
+*.mode1v3
+*.mode*
+*.pbxuser
+.DS_Store
+*.perspectivev3
+*.log
+*.dSYM
+*.[oa]
+*.la
+*~
+Makefile
+*.status
+*.pc
+libtool
+.libs

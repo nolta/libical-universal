@@ -1,0 +1,10 @@
+--- src/libical/icaltz-util.orig.h	2010-04-28 09:58:45.000000000 -0700
++++ src/libical/icaltz-util.h	2010-04-28 09:59:29.000000000 -0700
+@@ -37,3 +37,7 @@
+ icalcomponent *icaltzutil_fetch_timezone (const char *location);
+ 
+ #endif 
++
++#ifndef bswap_32
++#define bswap_32
++#endif
