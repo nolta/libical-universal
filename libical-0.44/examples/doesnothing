@@ -35,7 +35,7 @@ relink_command=""
 # This environment variable determines our operation mode.
 if test "$libtool_install_magic" = "%%%MAGIC variable%%%"; then
   # install mode needs the following variable:
-  notinst_deplibs=' ../src/libical/libical.la ../src/libicalss/libicalss.la ../src/libicalvcal/libicalvcal.la /Users/johnclay/SmallSociety/Source/Trunk/libical/libical/src/libical/.libs/libical.la'
+  notinst_deplibs=' ../src/libical/libical.la ../src/libicalss/libicalss.la ../src/libicalvcal/libicalvcal.la /Users/johnclay/SmallSociety/Source/Trunk/libical-universal/libical/src/libical/.libs/libical.la'
 else
   # When we are sourced in execute mode, $file and $echo are already set.
   if test "$libtool_execute_magic" != "%%%MAGIC variable%%%"; then
@@ -85,7 +85,7 @@ else
 
   if test -f "$progdir/$program"; then
     # Add our own library path to DYLD_LIBRARY_PATH
-    DYLD_LIBRARY_PATH="/Users/johnclay/SmallSociety/Source/Trunk/libical/libical/src/libical/.libs:/Users/johnclay/SmallSociety/Source/Trunk/libical/libical/src/libicalss/.libs:/Users/johnclay/SmallSociety/Source/Trunk/libical/libical/src/libicalvcal/.libs:$DYLD_LIBRARY_PATH"
+    DYLD_LIBRARY_PATH="/Users/johnclay/SmallSociety/Source/Trunk/libical-universal/libical/src/libical/.libs:/Users/johnclay/SmallSociety/Source/Trunk/libical-universal/libical/src/libicalss/.libs:/Users/johnclay/SmallSociety/Source/Trunk/libical-universal/libical/src/libicalvcal/.libs:$DYLD_LIBRARY_PATH"
 
     # Some systems cannot cope with colon-terminated DYLD_LIBRARY_PATH
     # The second colon is a workaround for a bug in BeOS R4 sed

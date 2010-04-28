@@ -60,7 +60,7 @@ make install
 # Copy
 
 cp "$PREFIX/lib/libical.a" "$BUILT_PRODUCTS_DIR"
-cp -R "$PREFIX/share/libical" "$BUILT_PRODUCTS_DIR"
-cp -R "$PREFIX/include/libical" "$BUILT_PRODUCTS_DIR"
+cp -R "$PREFIX/share/libical" "$BUILT_PRODUCTS_DIR/resources"
+cp -R "$PREFIX/include/libical" "$BUILT_PRODUCTS_DIR/headers"
 
 exit 0
